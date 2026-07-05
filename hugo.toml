@@ -1,12 +1,12 @@
 DefaultContentLanguage = "zh"
 dateFormat = "2006-01-02 15:04:05"
-description = "🌀riba2534's Blog"
+description = "Zenlab 的个人博客，基于 Hugo 与 Diary 主题重建。"
 enableEmoji = true
 enableGitInfo = true
 languageCode = "zh-cn"
 theme = "diary"
-title = "🌀riba2534's Blog"
-baseURL = "https://blog.riba2534.cn/"
+title = "Zenlab Blog"
+baseURL = "https://blog.zenlab.top/"
 relativeURLs = true
 
 
@@ -35,16 +35,16 @@ escapedSpace = true
 # enableGitalk = false
 enableOpenGraph = true
 enableTwitterCards = true
-title = "🌀riba2534's Blog"
-description = "riba2534的个人技术博客，分享编程、投资、生活的思考与经验"
+title = "Zenlab Blog"
+description = "记录技术、AI 与投资研究，发布自己的文章。"
 enableMathJax = true
 enableLaTeX=true
 enableMermaid = true
 enableReadingTime = true
 # favicon = "👋"  # emoji favicon 使用下方内联方式
-subtitle = "凡事有交代，件件有着落，事事有回音"
-twikooEnvId = "https://twikoo.riba2534.cn"
-enableTwikoo = true 
+subtitle = "保留 Diary 主题，重新开始写自己的文章"
+enableTwikoo = false
+homePageSection = "blog"
 
 # [params.gitalk]
 # owner = "user"
@@ -74,44 +74,26 @@ url = "/tags"
 weight = 3
 
 [[menu.main]]
-name = "系列📚"
-url = "/series"
-weight = 4
-
-[[menu.main]]
 name = "归档📃"
 url = "/archive"
-weight = 5
+weight = 4
 
 [[menu.main]]
 name = "关于👋"
 url = "/about"
-weight = 6
-
-[[menu.main]]
-name = "友链🔗"
-url = "/friends"
-weight = 7
+weight = 5
 
 [[menu.main]]
 name = "RSS📢"
 url = "/index.xml"
-weight = 8
-
-[[menu.footer]]
-name = "CSDN"
-url = "https://blog.csdn.net/riba2534"
-weight = 1
+weight = 6
 
 [[menu.footer]]
 name = "GitHub"
-url = "https://github.com/riba2534"
+url = "https://github.com/clchen-dev"
+weight = 1
+
+[[menu.footer]]
+name = "Domain"
+url = "https://blog.zenlab.top"
 weight = 2
-[[menu.footer]]
-name = "Zhihu"
-url = "https://www.zhihu.com/people/riba2534"
-weight = 3
-[[menu.footer]]
-name = "Email"
-url = "mailto:riba2534@qq.com"
-weight = 4

@@ -75,6 +75,24 @@
                 </div>
             </a>
         {{ end }}
+
+        {{ if eq (len $pages) 0 }}
+            <div class="post-item-wrapper">
+                <div class="post-item post-item-no-divider">
+                    <div class="post-item-info-wrapper">
+                        <div class="post-item-title">
+                            站点重建中
+                        </div>
+                        <div class="post-item-summary">
+                            旧 fork 内容已移除。这里将保留 Diary 主题，并从零开始发布自己的文章。
+                        </div>
+                        <div class="post-item-meta">
+                            <time>{{ now.Format "2006-01-02" }}</time>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {{ end }}
     </div>
 
 {{ end }}
