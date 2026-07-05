@@ -1,6 +1,6 @@
 DefaultContentLanguage = "zh"
 dateFormat = "2006-01-02 15:04:05"
-description = "Zenlab 的个人博客，基于 Hugo 与 Diary 主题重建。"
+description = "Zenlab 的个人博客，记录技术、AI 与投资研究。"
 enableEmoji = true
 enableGitInfo = true
 languageCode = "zh-cn"
@@ -36,13 +36,13 @@ escapedSpace = true
 enableOpenGraph = true
 enableTwitterCards = true
 title = "Zenlab Blog"
-description = "记录技术、AI 与投资研究，发布自己的文章。"
+description = "记录技术、AI 与投资研究。"
 enableMathJax = true
 enableLaTeX=true
 enableMermaid = true
 enableReadingTime = true
 # favicon = "👋"  # emoji favicon 使用下方内联方式
-subtitle = "保留 Diary 主题，重新开始写自己的文章"
+subtitle = "记录技术、AI 与投资研究"
 enableTwikoo = false
 homePageSection = "blog"
 
