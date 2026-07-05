@@ -1,45 +1,50 @@
 # Zenlab Blog
 
-基于 Hugo + Diary 主题重建的个人博客。
+A personal blog built with Hugo and the [Diary](https://github.com/AmazingRise/hugo-theme-diary) theme.
 
-地址计划为：https://blog.zenlab.top
+Site: https://blog.zenlab.top
 
-主题：基于 [hugo-theme-diary](https://github.com/AmazingRise/hugo-theme-diary)，已直接包含在项目中
+This project is a fork of [riba2534/blog](https://github.com/riba2534/blog). The original theme structure is kept, but the upstream articles and personal information have been removed and replaced with my own content.
 
-当前站点保留主题结构，但已移除原 fork 仓库中的文章内容与个人信息，重新用于发布自己的文章。
+# Build
 
-# 构建方法
-
-> hugo 需要下载扩展版
+> Requires the extended version of Hugo.
 
 ```bash
-# 克隆仓库
-git clone https://github.com/riba2534/blog.git
+# Clone the repository
+git clone https://github.com/clchen-dev/blog.git
 cd blog
 
-# 启动本地开发服务器
+# Start the local dev server
 hugo server --disableFastRender
 
-# 构建静态网站
+# Build the static site
 hugo --minify
 ```
 
-# 部署
+Or via the bundled `Makefile` (`make help` lists all targets): `make serve`, `make build`, `make new title="..."`, `make preview`.
 
-当前部署目标是 Cloudflare Pages。
+# Deployment
+
+Deployed to Cloudflare Pages.
 
 - Project name: `blog`
 - Production branch: `main`
 - Build output: `public`
-- 自定义域名：`blog.zenlab.top`
+- Custom domain: `blog.zenlab.top`
 
-仓库内置 GitHub Actions workflow，会在 `main` 推送后：
+A GitHub Actions workflow (`.github/workflows/deploy.yml`) runs on every push to `main`:
 
-1. 安装 Hugo Extended
-2. 执行 `hugo --minify`
-3. 通过 `wrangler pages deploy public --project-name blog --branch main` 发布
+1. Installs Hugo Extended
+2. Runs `hugo --minify`
+3. Publishes via `wrangler pages deploy public --project-name blog --branch main`
 
-需要的 GitHub Secrets：
+Required GitHub Secrets:
 
 - `CLOUDFLARE_ACCOUNT_ID`
 - `CLOUDFLARE_API_TOKEN`
+
+# Credits
+
+- Theme: [hugo-theme-diary](https://github.com/AmazingRise/hugo-theme-diary), bundled directly under `themes/diary`
+- Forked from [riba2534/blog](https://github.com/riba2534/blog)
